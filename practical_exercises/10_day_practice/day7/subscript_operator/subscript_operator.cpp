@@ -17,7 +17,7 @@ public:
     n = 0;
     employ = new Person[max];
   }
-  double &operator[](char *Name) { //重载[]，返回引用
+  double &operator[](const char *Name) { //重载[]，返回引用
     Person *p;
     for (p = employ; p < employ + n; p++)
       //如果存在处理

@@ -12,7 +12,7 @@ public:
 };
 int main() {
   D d;
-  d.f();
+  d.f(); //D::g
   
   return 0;
 }

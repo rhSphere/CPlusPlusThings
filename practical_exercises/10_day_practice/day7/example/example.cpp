@@ -54,6 +54,8 @@ bool String::operator<(const String &R) const {
 bool String::operator>(const String &R) { return R < *this; }
 bool String::operator>=(const String &R) { return !(*this < R); }
 char &String::operator[](int subscript) { return sPtr[subscript]; }
+
+
 int main() {
   String s1("happy"), s2("new year"), s3;
   cout << "s1 is " << s1 << "\ns2 is " << s2 << "\ns3 is " << s3
